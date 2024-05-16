@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,8 +8,12 @@
     padding: 0;
     box-sizing: border-box;
     border: 0;
+    font-family: "Roboto Flex", sans-serif;
 }
 
+body{
+    background-color: bisque;
+}
 a,
 a:link,
 a:visited {
@@ -15,6 +22,13 @@ a:visited {
     outline: none;
     border: none;
 
+
+}
+
+a {
+    color: #D6D9E6;
+    font-weight: bold;
+    font-size: 15px;
 
 }
 
@@ -51,18 +65,179 @@ p {
     background-attachment: fixed;
     height: 100vh;
 }
-.header-navbar{
+
+.header-navbar {
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 0;
 }
-ul{
-display: flex;
+
+.header-logo {
+
+    font-size: 25px;
+    font-variant: small-caps;
+    border-bottom: 5px solid #D6D9E6;
+    border-radius: 35px;
 
 }
-li{
-margin-left: 40px;
+
+
+
+ul {
+
+    display: flex;
+
+}
+
+li {
+    border-bottom: 4px solid #D6D9E6;
+    color: #D6D9E6;
+    margin-left: 40px;
+    border-radius: 35px;
+}
+
+.header-text {
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: #C0CAFD;
+
+}
+
+h2 {
+    color: #D6D9E6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 22px;
+
+}
+
+.first-letter {
+    font-size: 10.3rem;
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: #C0CAFD
+}
+
+.btn-start {
+
+    display: block;
+    background-color: #C0CAFD;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.btn-start::after {
+    content: "BAŞLA";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(246, 185, 71);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.btn-start:hover::after {
+    top: 0%;
+
+}
+
+
+
+.about {
+    margin-bottom: 150px;
+
+}
+
+.about-tittle {
+    margin: 60px 0;
+
+}
+
+.about-tittle h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.about-tittle h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.about-img {
+    width: 30%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 50%;
+}
+
+h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    font-family: "Herr Von Muellerhoff", cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 200;
+}
+
+.about-text #anchor {
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
 
 }
