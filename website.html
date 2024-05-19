@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arda Çakar'ın Bloğu</title>
@@ -23,11 +22,10 @@
           </div>
           <div class="header-menu">
             <ul>
-              <li><a href="#"></a>Home</li>
-              <li><a href="#"></a>Hakkımda</li>
-              <li><a href="#"></a>Şehrim</li>
-              <li><a href="#"></a>İletişim</li>
-
+              <li><a id="Home" href="/website/website.html" >Home</a></li>
+              <li><a id="Hakkımda" href="/website/website.html" >Hakkımda</a></li>
+              <li><a id="Şehrim" href="/website/şehrim.html">Şehrim</a></li>
+              <li><a id="İletişim" href="/website/iletişim.html">İletişim</a></li>
             </ul>
             <i class="material-icons" id="menu-icon" onclick="menuToggle()">menu</i>
           </div>
@@ -39,8 +37,6 @@
         </div>
       </div>
     </div>
-
-
   </header>
 
   <section id="about">
@@ -51,10 +47,7 @@
         </div>
         <div class="about-content">
           <div class="about-img">
-
             <img src="/website/public/resimler/ahtapotsaç.JPEG" alt="fotoğraf bulunamadı">
-
-
           </div>
           <div class="about-text">
             <h4>Benim Hikayem</h4>
@@ -73,8 +66,8 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
+
   <section id="portfolio">
     <div class="portfolio">
       <div class="portfolio-item">
@@ -82,62 +75,63 @@
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/limaniçimarina.jpg" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/köprü.png" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/57.Alay.webp" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/duryolcuyakın.jpg" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/gelibolu.webp" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/abidebayrak.jpg" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/zeytin.jpg" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/mka.jpg" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
       <div class="portfolio-item">
         <img src="/website/public/resimler/truvaatihd.jpg" alt="Fotoğraf bulunamadı">
         <div class="overlay">
           <i class="material-icons">cloud</i>
         </div>
-      </div </div>
+      </div>
   </section>
+
   <section id="about">
     <div class="about">
       <div class="container">
@@ -146,10 +140,7 @@
         </div>
         <div class="about-content">
           <div class="about-img">
-
             <img src="/website/public/resimler/köpek taşkapı.JPEG" alt="fotoğraf bulunamadı">
-
-
           </div>
           <div class="about-text">
             <h4>Benim Hikayem</h4>
@@ -157,22 +148,23 @@
               <img src="/website/public/resimler/anchor_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="icon bullunamadı">
             </div>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error i
-              ncidunt dolores nesciunt dolorem! Reprehenderit delectus neque accusantium commodi! Aspernatur voluptas
-              fugit provident dolo
-              ribus enim error molestias, recusandae id sunt. Minima?
+              Şu anda Sakarya Üniversitesi'nde Bilgisayar Mühendisliği bölümünde öğrenim görmekteyim. 
+              Aynı zamanda Sakarya Üniversitesi'nde Atatürk Düşünceleri Klubünün etkinliklerine katılarak sosyal ve kültürel açıdan da kendimi geliştirdim. 
+              Boş zamanlarımda Arkadaşlarımla gezmek, serbest dalış yapmak balık tutmak gibi aktivitelerle ilgilenmeyi tercih ediyorum. 
+              Mezuniyet sonrası bölümümün hakkını vererek hedeflerim doğrultusunda ilerlemektir
             </p>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </section>
 
-
-
-  
-
+  <script>
+    function menuToggle() {
+      var menu = document.querySelector('.header-menu ul');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 
 </html>

@@ -18,28 +18,22 @@ body {
 a,
 a:link,
 a:visited {
-
     text-decoration: none;
     outline: none;
     border: none;
-
-
 }
 
 a {
     color: #D6D9E6;
     font-weight: bold;
     font-size: 15px;
-
 }
 
 ul,
 li {
-
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 section,
@@ -49,14 +43,12 @@ p {
     padding: 0;
     outline: none;
     border: none;
-
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .header {
@@ -68,7 +60,6 @@ p {
 }
 
 .header-navbar {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,20 +67,14 @@ p {
 }
 
 .header-logo {
-
     font-size: 25px;
     font-variant: small-caps;
     border-bottom: 5px solid #D6D9E6;
     border-radius: 35px;
-
 }
 
-
-
 ul {
-
     display: flex;
-
 }
 
 li {
@@ -102,12 +87,13 @@ li {
 .header-text {
     position: absolute;
     top: 30%;
-    left: 52%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 h1 {
@@ -117,7 +103,6 @@ h1 {
     letter-spacing: 2px;
     font-family: "Herr Von Muellerhoff", cursive;
     color: #C0CAFD;
-
 }
 
 h2 {
@@ -130,7 +115,6 @@ h3 {
     margin-bottom: 30px;
     margin-top: 10px;
     font-size: 22px;
-
 }
 
 .first-letter {
@@ -140,7 +124,6 @@ h3 {
 }
 
 .btn-start {
-
     display: block;
     background-color: #C0CAFD;
     color: #fff;
@@ -150,7 +133,6 @@ h3 {
     position: relative;
     overflow: hidden;
 }
-
 
 .btn-start::after {
     content: "BAŞLA";
@@ -166,22 +148,16 @@ h3 {
     transition: 0.5s;
 }
 
-
 .btn-start:hover::after {
     top: 0%;
-
 }
-
-
 
 .about {
     margin-bottom: 150px;
-
 }
 
 .about-tittle {
     margin: 60px 0;
-
 }
 
 .about-tittle h2 {
@@ -192,7 +168,6 @@ h3 {
     font-size: 30px;
     font-weight: 600;
 }
-
 
 .about-tittle h2::after {
     content: "";
@@ -208,9 +183,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
-
 
 .about-img {
     width: 30%;
@@ -224,7 +197,6 @@ h3 {
     border-top-left-radius: 150px;
     border-bottom-right-radius: 150px;
     border: black;
-
 }
 
 .about-text {
@@ -245,13 +217,11 @@ h4 {
     text-align: center;
     color: black;
     margin-bottom: 25px;
-
 }
 
 .anchor {
     text-align: center;
     color: black;
-
 }
 
 .portfolio {
@@ -267,7 +237,6 @@ h4 {
 }
 
 .portfolio-item img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -305,30 +274,81 @@ h4 {
     display: none;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
+    .header-navbar {
+        flex-direction: column;
+    }
+
     .header-menu ul {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 60px;
         left: 0;
         background-color: #0d04615e;
         width: 100%;
+        display: none;
     }
 
     .header-menu ul li {
-        margin-right: 50px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-
+        margin: 10px 0;
     }
-    .header-menu ul li a{
+
+    .header-menu ul li a {
         color: #C0CAFD;
     }
-    .header-menu #menu-icon{
+
+    #menu-icon {
         display: block;
         cursor: pointer;
     }
+
+    .header-menu.show {
+        display: flex;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .portfolio-item {
+        width: 48%;
+        margin-bottom: 4%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-text h1 {
+        font-size: 4.5rem;
+    }
+
+    .header-text h3 {
+        font-size: 18px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.slideshow-container_sehrim {
+    max-width: auto;
+    height: 350px;
+    position: relative;
+    margin: auto;
+    border: 6px solid #005903 ;
+    border-radius: 9px;
 }
